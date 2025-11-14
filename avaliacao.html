@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores da Bahia - Avalie-nos</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+      <h1 class="logo">Sabores da Bahia</h1>
+    </div>
+    <p class="tagline">Autêntica Culinária Baiana</p>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Cardápio</a>
+      <a href="unidades.html" class="nav-link">Nossas Unidades</a>
+      <a href="avaliacao.html" class="nav-link">Conte sua Experiência</a>
+    </nav>
+  </header>
+	 
+<section id="avaliacao" class="avaliacao">
+  <h2>Avalie Nosso Estabelecimento</h2>
+
+  <form action="#" method="POST" class="form-card" aria-labelledby="avaliacao-titulo">
+    <fieldset>
+      <legend>Atendimento</legend>
+      <div class="radio-group radio-pills" role="radiogroup" aria-label="Avaliação do atendimento">
+        <label class="radio-pill"><input type="radio" name="atendimento" value="1"> 1: Péssimo</label>
+        <label class="radio-pill"><input type="radio" name="atendimento" value="2"> 2: Ruim</label>
+        <label class="radio-pill"><input type="radio" name="atendimento" value="3" checked> 3: Regular</label>
+        <label class="radio-pill"><input type="radio" name="atendimento" value="4"> 4: Bom</label>
+        <label class="radio-pill"><input type="radio" name="atendimento" value="5"> 5: Ótimo</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Recepção</legend>
+      <label for="recepcao">Como você avalia a recepção?</label>
+      <label>
+        <select id="recepcao" name="recepcao">
+          <option value="excelente">Excelente</option>
+          <option value="boa">Boa</option>
+          <option value="regular">Regular</option>
+          <option value="ruim">Ruim</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Qualidade do Ambiente</legend>
+      <label for="ambiente">
+        <input id="ambiente" type="range" name="ambiente" min="1" max="10" value="7">
+        <span class="help-text">De 1 a 10</span>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Limpeza</legend>
+      <div class="radio-group radio-pills" role="radiogroup" aria-label="Avaliação da limpeza">
+        <label class="radio-pill">
+          <input type="radio" name="limpeza" value="ótima"> Ótima
+        </label>
+        <label class="radio-pill">
+          <input type="radio" name="limpeza" value="boa" checked> Boa
+        </label>
+        <label class="radio-pill">
+          <input type="radio" name="limpeza" value="ruim"> Ruim
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tempo de Espera</legend>
+      <label for="espera">
+        <input id="espera" type="number" name="espera" min="0" max="60" placeholder="Minutos">
+        <span class="help-text">Informe o tempo em minutos</span>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Comentários Adicionais</legend>
+      <label for="comentarios" class="sr-only">Comentários Adicionais</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe sua opinião aqui..." maxlength="500"></textarea>
+      <span class="help-text">Máximo de 500 caracteres</span>
+    </fieldset>
+
+    <button type="submit">Enviar Avaliação</button>
+  </form>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="index.html" class="nav-link">Cardápio</a>
+        <a href="unidades.html" class="nav-link">Nossas Unidades</a>
+        <a href="avaliacao.html" class="nav-link">Conte sua Experiência</a>
+      </nav>
+      <p class="footer-text">Sabores da Bahia ©️ 2025 | Rua dos Orixás, 123 - Salvador, Bahia.</p>
+      <p class="footer-text">Reservas: <a class="footer-phone" href="tel:+5571999999999">(71) 9999-9999</a></p>
+    </div>
+  </footer>
+  <script src="scrpt.js"></script>
+</body>
+</html>
