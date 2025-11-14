@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sabores da Bahia - Avalie-nos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="inicio.html" class="link-menu voltar-cardapio">Voltar ao Cardápio</a>
+
+<section class="avaliacao">
+  <h2>Avalie Nosso Estabelecimento</h2>
+  <form>
+    <fieldset>
+      <legend>Atendimento</legend>
+      <label><input type="radio" name="atendimento" value="1"> 1: Péssimo</label>
+      <label><input type="radio" name="atendimento" value="2"> 2: Ruim</label>
+      <label><input type="radio" name="atendimento" value="3"> 3: Regular</label>
+      <label><input type="radio" name="atendimento" value="4"> 4: Bom</label>
+      <label><input type="radio" name="atendimento" value="5"> 5: Ótimo</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Recepção</legend>
+      <select name="recepcao">
+        <option value="excelente">Excelente</option>
+        <option value="boa">Boa</option>
+        <option value="regular">Regular</option>
+        <option value="ruim">Ruim</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Qualidade do Ambiente</legend>
+      <input type="range" name="ambiente" min="1" max="10" value="5">
+      <span>5</span>
+    </fieldset>
+
+    <fieldset>
+      <legend>Limpeza</legend>
+      <label><input type="radio" name="limpeza" value="ótima"> Ótima </label>
+      <label><input type="radio" name="limpeza" value="boa"> Boa </label>
+      <label><input type="radio" name="limpeza" value="ruim"> Ruim </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tempo de Espera</legend>
+      <input type="number" name="espera" min="0" max="60" placeholder="Minutos">
+    </fieldset>
+
+    <fieldset>
+      <legend>Comentários Adicionais</legend>
+      <textarea name="comentarios" rows="4" placeholder="Deixe sua opinião aqui..."></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar Avaliação</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
