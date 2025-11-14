@@ -1,6 +1,5 @@
 (function () {
   try {
-    // Melhoria simples: loga a página atual e realça o foco de teclado nos links
     console.log("Sabores da Bahia - página atual:", location.pathname.split("/").pop() || "index.html");
 
     var links = document.querySelectorAll("a.nav-link");
@@ -20,7 +19,6 @@
       });
     });
 
-    // Adiciona botão de CTA "Adicionar" em cada produto do cardápio (index)
     var productCards = document.querySelectorAll(".menu .menu-item .menu-item-content");
     productCards.forEach(function (contentEl) {
       if (!contentEl.querySelector(".add-to-cart")) {
@@ -42,18 +40,14 @@
       }
     });
 
-    // Lógica do carrinho (somente na home)
     if (document.querySelector(".menu")) {
       initCart();
     }
   } catch (e) {
-    // desabilita o aviso do eslint para uso de console
-    // eslint-disable-next-line no-console
     console.log("A inicialização do site encontrou um erro:", e);
   }
 })();
 
-// --- Carrinho ---
 var CART_STORAGE_KEY = "sdb_cart";
 var cart = [];
 
@@ -88,9 +82,7 @@ function loadCart() {
 function saveCart() {
   try {
     localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
-  } catch (e) {
-    // ignore
-  }
+  } catch (e) {}
 }
 
 function addToCart(item) {
@@ -280,6 +272,7 @@ function initCart() {
     });
   }
 }
+
 
 
 
