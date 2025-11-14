@@ -1,5 +1,4 @@
-/* Duplicated from style/main.css to root as requested */
-/* Base styles */
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +11,6 @@ html, body {
   background: #fafafa;
 }
 
-/* Layout helpers */
 .menu-container,
 .unidades,
 .avaliacao {
@@ -20,7 +18,6 @@ html, body {
   margin: 0 auto;
 }
 
-/* Home (index) full-width container */
 .full-width {
   max-width: none;
   width: 100%;
@@ -29,7 +26,6 @@ html, body {
   padding-right: 0;
 }
 
-/* Header and navigation */
 .header {
   text-align: center;
   padding: 20px 0 16px;
@@ -71,7 +67,6 @@ html, body {
   color: #8E0000;
 }
 
-/* Header-specific nav link overrides for contrast */
 .header .nav-link {
   color: #e8fff6;
   background: rgba(255, 255, 255, 0.06);
@@ -86,7 +81,6 @@ html, body {
   outline-offset: 2px;
 }
 
-/* Menu sections */
 .menu {
   padding: 8px 0 24px;
 }
@@ -120,7 +114,6 @@ html, body {
   border-color: #dfe7e4;
 }
 
-/* Placeholder de imagem (simula vitrine) */
 .menu-item::before {
   content: "";
   display: block;
@@ -130,7 +123,6 @@ html, body {
   margin-bottom: 10px;
 }
 
-/* Real images */
 .menu-item.has-image::before {
   display: none;
 }
@@ -142,7 +134,6 @@ html, body {
   margin-bottom: 10px;
   background: #fff7e0;
 }
-/* Real images */
 .menu-item.has-image::before {
   display: none;
 }
@@ -177,7 +168,6 @@ html, body {
   box-shadow: 0 2px 6px rgba(11, 110, 79, 0.25);
 }
 
-/* CTA por produto (parecer prateleira de vendas) */
 .add-to-cart {
   margin-top: auto;
   display: inline-block;
@@ -198,7 +188,6 @@ html, body {
   transform: translateY(0);
 }
 
-/* Unidades page */
 .branches {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -232,7 +221,6 @@ html, body {
   text-decoration: underline;
 }
 
-/* Mapas responsivos nas unidades */
 .map-wrapper {
   position: relative;
   width: 100%;
@@ -686,5 +674,6 @@ button[type="submit"]:hover {
     width: 100%;
   }
 }
+
 
 
